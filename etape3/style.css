@@ -1,0 +1,50 @@
+/* ===== Etape 1 : mise en forme du tableau ===== */
+body {
+    margin: 0;
+}
+
+/* Conteneur : tableau au milieu + police globale Calibri en premier choix */
+#table_container {
+    width: 80%;
+    margin: 30px auto;
+    font-family: Calibri, Arial, sans-serif;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* En-tête : fond bleu, texte blanc, centré (surclasse les classes col_*) */
+#table_container th {
+    background-color: #007bbd;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+}
+
+td {
+    padding: 10px;
+    font-size: 14px;
+    color: #333333;
+    border-bottom: 1px solid #dddddd;
+}
+
+/* Classes des colonnes */
+.col_number {
+    text-align: center;
+    width: 70px;
+}
+
+.col_text {
+    text-align: left;
+}
+
+.col_chkbox {
+    text-align: center;
+    width: 80px;
+}

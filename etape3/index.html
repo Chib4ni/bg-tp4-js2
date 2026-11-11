@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>CRUD-Persons - Etape 3</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Conteneur du tableau -->
+    <div id="table_container">
+        <!-- Seul l'entête reste : les lignes seront insérées par JavaScript -->
+        <table>
+            <thead>
+                <tr>
+                    <th class="col_number">N°</th>
+                    <th class="col_text">Nom</th>
+                    <th class="col_text">Prénom</th>
+                    <th class="col_number">Points</th>
+                    <th class="col_chkbox">Select</th>
+                </tr>
+            </thead>
+        </table>
+
+        <button onclick="doInsertRowTable(99, 'nom', 'prenom', 10)">
+            Ajouter
+        </button>
+
+        <button onclick="consoleTableau()">
+            Console Tableau
+        </button>
+    </div>
+
+    <!-- Script externe -->
+    <script src="script.js"></script>
+</body>
+</html>
